@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Gallery</title>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/Logo.jpeg">
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+	<link href="dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+		 <!-- Static navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+		
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Fresh Foods</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+		  	<li><img src="img/Logo.jpeg" class="img-circle" width="50px" height="50px"></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About_us.html">About</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Chart Toppers <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+			  <li class="dropdown-header">Veg</li>
+                    <li><a href="#">brinjal</a></li>
+                    <li><a href="#">pumpkin</a></li>
+					<li role="separator" class="divider"></li>
+					<li class="dropdown-header">Non_veg</li>
+                    <li><a href="#">Chicken</a></li>
+					<li><a href="#">Mutton</a></li>
+					<li><a href="#">Fish</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Fruits</li>
+                    <li><a href="#">Orange</a></li>
+                    <li><a href="#">Apple</a></li>
+					<li><a href="#">Guava</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+		  <li><form class="navbar-form navbar-right" method="POST" action=""  name="search">
+		  	<input type="text" placeholder="Search....">
+		  </form> </li>
+            <li><a href="#" data-target="#modal2" data-toggle="modal"><span class="glyphicon glyphicon-user"></span>Sign up</a></li>
+            <li><a href="#" data-target="#modal1" data-toggle="modal"><span class="glyphicon glyphicon-log-in"></span>Log in</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<div class="container">
+	<div class="modal modal-fade" id="modal2">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h2 class="modal-title">Registration</h2><nr>
+				</div>
+				<div class="modal-body">
+					<form role="form" name="form2" method="post">
+								<div class="form-group">
+									First name: <input class="form-control focusedInput" type="text" name="f_name" required>
+								</div>
+								<div class="form-group">
+									Last name: <input class="form-control focusedInput" type="text" name="l_name" required>
+								</div>
+								<div class="form-group">
+									Password: <input class="form-control focusedInput" type="password" name="pw">
+								</div>
+								<div class="form-group">
+									Confirm_Password: <input class="form-control focusedInput" type="password" name="c_pw">
+								</div>
+								<div class="form-group">
+									Gender:<br> MALE<input class="form-control focusedInput" type="radio" name="gender" value="M">FEMALE <input class="form-control focusedInput" type="radio" name="gender" value="F">
+								</div>
+								<div class="form-group">
+									Date of birth: <input class="form-control focusedInput" type="date" name="dob">
+								</div>
+								<div class="form-group">
+									Email_Id: <input class="form-control focusedInput" type="text" name="email">
+								</div>
+								<div class="form-group">
+									Phone_no: <input class="form-control focusedInput" type="number" name="phno" required>
+								</div><hr>
+							<button type="submit" class="btn btn-primary">Submit</button>
+							<button type="reset" class="btn btn-warning">Reset</button>
+					</form>
+				</div>
+				</div>
+			</div>	
+		</div>
+	</div><!-- modal2 registration -->
+		<div class="modal" id="modal1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<h2 class="modal-title">Login</h2>
+				</div>
+				<div class="modal-body">
+				<form role="form" method="POST">
+				<div class="form-group">
+				Email: <input class="form-control focusedInput" type="text" name="u_id" required>
+				</div>
+				<div class="form-group">
+				Password:<input class="form-control focusedInput" type="password" name="pw">
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="reset" class="btn btn-warning">Reset</button>
+				</form>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+	 <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="#">Gallery</a></li>
+            <li><a href="veg.html">Veg and Fruits</a></li>
+            <li><a href="Nonveg.html">Non_Veg</a></li>
+			<li class="active"><a href="#">Groceries</a></li>
+			<li><a href="#">Offers</a></li>
+			<li><a href="#">Feedback</a></li>
+         </ul>
+        </div>
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+          <h1 class="page-header">Vegetables <br>& Fruits</h1>
+
+          <div class="row placeholders">
+            <div class=" well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/apple.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+			  <h4>Apple</h4>
+              <span class="text-muted">Rs.40/- per Kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+            <div class=" well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/pointed_gourd.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+              <h4>Pointed Gourd</h4>
+              <span class="text-muted">Rs.30/- per Kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+            <div class="well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/beetroot.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+              <h4>Beetroot</h4>
+              <span class="text-muted">Rs.50/- per Kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+            <div class="well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/papaya.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+              <h4>Papaya</h4>
+              <span class="text-muted">Rs.70/- per kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+          </div>
+		  <!-- 2nd row-->
+		    <div class="row placeholders">
+            <div class=" well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/lemon.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+			   <h4>Lemon</h4>
+              <span class="text-muted">Rs.10/- per Kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+            <div class=" well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/peach.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+              <h4>Peach</h4>
+              <span class="text-muted">Rs.80/- per Kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+            <div class="well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/raddish.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+              <h4>Raddish</h4>
+              <span class="text-muted">Rs.30/- per Kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+            <div class="well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/potatoes.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+              <h4>Potatoes</h4>
+              <span class="text-muted">Rs.20/- per Kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+          </div>
+		  <!-- 3rd row-->
+		  <div class="row placeholders">
+            <div class=" well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/grapes.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+			   <h4>Grapes</h4>
+              <span class="text-muted">Rs.90/- per Kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+            <div class=" well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/guava.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+              <h4>Guava</h4>
+              <span class="text-muted">Rs.80/- per Kg</span>
+			  <button type="button" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-heart"></span>Add to <br>basket</button>
+            </div>
+            <div class="well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/pumpkin.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+              <h4>Pumpkin</h4>
+              <span class="text-muted">Rs.30/- per Kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+            <div class="well col-xs-6 col-sm-3 placeholder">
+              <img src="img/Veg/sweet_potato.jpg" class="img-circle" alt="Generic placeholder thumbnail" height="200px" width="200px">
+              <h4>Sweet Potato</h4>
+              <span class="text-muted">Rs.20/- per Kg</span>
+			  <button type="button" class="btn btn-info btn-xs">Add to <br>basket</button>
+            </div>
+          </div>
+		  </div>
+      </div>
+    </div>
+		  <!--Gallerys -->
+</body>
+<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</html>
